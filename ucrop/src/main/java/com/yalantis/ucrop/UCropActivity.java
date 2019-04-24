@@ -517,6 +517,7 @@ public class UCropActivity extends AppCompatActivity {
 
     private void setupScaleWidget() {
         mTextViewScalePercent = findViewById(R.id.text_view_scale);
+        mTextViewScalePercent.setTextColor(mActiveWidgetColor);
         ((HorizontalProgressWheelView) findViewById(R.id.scale_scroll_wheel))
                 .setScrollingListener(new HorizontalProgressWheelView.ScrollingListener() {
                     @Override
