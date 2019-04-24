@@ -480,6 +480,7 @@ public class UCropActivity extends AppCompatActivity {
 
     private void setupRotateWidget() {
         mTextViewRotateAngle = findViewById(R.id.text_view_rotate);
+        mTextViewRotateAngle.setTextColor(mActiveWidgetColor);
         ((HorizontalProgressWheelView) findViewById(R.id.rotate_scroll_wheel))
                 .setScrollingListener(new HorizontalProgressWheelView.ScrollingListener() {
                     @Override
